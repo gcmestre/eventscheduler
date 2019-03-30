@@ -1,10 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "415dfdcb118dd9bdfef17671cb7dcd78dbd69b6ae7d4f39e8b44e71d60ca72e7"
+            "sha256": "bc9f13bce80bb123169027546ceac88d985e5899d938745210c1e9045e943a29"
         },
         "pipfile-spec": 6,
         "requires": {
+            "django": "2.1",
             "python_version": "3.6"
         },
         "sources": [
