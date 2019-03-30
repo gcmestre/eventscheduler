@@ -1,0 +1,21 @@
+{% extends 'home.html' %}
+
+{% block main_page %}
+
+    {% if event %}
+        <h1> {{ event.title }} </h1>
+        <p> Date: {{ event.date }} <p>
+        <p> Owner: {{ event.owner.first_name}} <p>
+        <p> Subscribers: {{ event.number_of_subscribers }}</p>
+        <p>
+            {% if event.owner == user %}
+            <a href="{% url 'events:update' event.id %}">
+                <button> Edit </button>
+            </a>
+        {% endif %}
+        <p>
+    {% else %}
+        <p>No events are available.</p>
+    {% endif %}
+
+{% endblock %}
